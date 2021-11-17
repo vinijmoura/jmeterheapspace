@@ -1,0 +1,10 @@
+{
+  "accountNumber": "123456789",
+  "dateOperation": "01/01/2020",
+  "operation": "DEB",
+  "amount": 123.56,
+  "origin": "987654321",
+  "document": "",
+  "category": "Supermercado",
+  "description": "Walmart"
+}

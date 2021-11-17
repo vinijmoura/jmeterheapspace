@@ -1,0 +1,139 @@
+.chip {
+  background: $colorLine;
+  font-size: 13px;
+  color: $colorHeading;
+  line-height: 1em;
+  height: 26px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  border-radius: 100px;
+  .chip-label {
+    padding: 0 12px;
+  }
+  &.chip-outline {
+    background: transparent;
+    box-shadow: inset 0 0 0 1px $colorLine;
+  }
+  &.chip-media {
+    position: relative;
+    padding-left: 20px;
+    img {
+      width: 25px;
+      height: 25px;
+      border-radius: 100px;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+  .chip-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 26px;
+    height: 26px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: $colorText;
+    color: #fff;
+    font-size: 14px;
+  }
+  .chip-delete {
+    width: 26px;
+    margin-left: -10px;
+    height: 26px;
+    display: inline-flex;
+    color: $colorHeading;
+    opacity: 0.7;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 100px;
+    &:hover,
+    &:active {
+      opacity: 1;
+    }
+  }
+}
+.chip-primary {
+  background: $colorPrimary;
+  color: #fff;
+  .chip-delete {
+    color: #fff;
+  }
+  &.chip-outline {
+    color: $colorPrimary;
+    box-shadow: inset 0 0 0 1px $colorPrimary;
+  }
+}
+.chip-danger {
+  background: $colorDanger;
+  color: #fff;
+  .chip-delete {
+    color: #fff;
+  }
+  &.chip-outline {
+    color: $colorDanger;
+    box-shadow: inset 0 0 0 1px $colorDanger;
+  }
+}
+.chip-success {
+  background: $colorSuccess;
+  color: #fff;
+  .chip-delete {
+    color: #fff;
+  }
+  &.chip-outline {
+    color: $colorSuccess;
+    box-shadow: inset 0 0 0 1px $colorSuccess;
+  }
+}
+.chip-warning {
+  background: $colorWarning;
+  color: #fff;
+  .chip-delete {
+    color: #fff;
+  }
+  &.chip-outline {
+    color: $colorWarning;
+    box-shadow: inset 0 0 0 1px $colorWarning;
+  }
+}
+.chip-info {
+  background: $colorInfo;
+  color: #fff;
+  .chip-delete {
+    color: #fff;
+  }
+  &.chip-outline {
+    color: $colorInfo;
+    box-shadow: inset 0 0 0 1px $colorInfo;
+  }
+}
+.chip-light {
+  background: #fff;
+  color: #222;
+  .chip-delete {
+    color: #222;
+  }
+  &.chip-outline {
+    color: #fff;
+    box-shadow: inset 0 0 0 1px #fff;
+  }
+}
+.chip-dark {
+  background: #222;
+  color: #fff;
+  .chip-delete {
+    color: #fff;
+  }
+  &.chip-outline {
+    color: #222;
+    box-shadow: inset 0 0 0 1px #222;
+  }
+}

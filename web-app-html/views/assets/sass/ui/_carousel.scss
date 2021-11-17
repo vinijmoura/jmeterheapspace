@@ -1,0 +1,38 @@
+.owl-carousel .owl-stage-outer{
+    padding-bottom: 20px; 
+    margin-bottom: -20px;
+}
+.carousel-slider{
+    text-align: center;
+    .owl-dots{
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 80px;
+    }
+}
+.carousel-button-footer{
+    padding: 0 16px;
+    padding-bottom: env(safe-area-inset-bottom);
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    min-height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    right: 0;
+    > div{
+        flex: 1;
+    }
+}
+.carousel-multiple{
+    width: calc(100% + 16px);
+    margin-left: -16px;
+}
+.carousel-single{
+    width: calc(100% + 16px);
+    margin-left: -16px;
+}
