@@ -9,10 +9,4 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: website
-  metrics:
-  - type: Resource
-    resource:
-      name: cpu
-      target:
-        type: Utilization
-        averageUtilization: 90
+  targetCPUUtilizationPercentage: 90

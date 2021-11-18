@@ -5,7 +5,7 @@ metadata:
   labels:
     app: website
 spec:
-  replicas: 100
+  replicas: 500
   selector:
     matchLabels:
       app: website
@@ -19,12 +19,14 @@ spec:
         image: acrcloudnativeregistry.azurecr.io/website:latest
         ports:
         - containerPort: 80
-        resources:
-          requests:
-            cpu: 50m
-            memory: 64Mi
-          limits:
-            cpu: 50m
-            memory: 64Mi
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+            httpHeaders:
+            - name: X-Powered-By
+              value: Express
+          initialDelaySeconds: 5
+          periodSeconds: 10
      
 
